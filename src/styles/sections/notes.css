@@ -1,0 +1,74 @@
+.note-tile,
+.flash-tile {
+  background: var(--color-white);
+  border: 1px solid var(--app-border);
+  border-radius: 11px;
+  padding: 17px;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+}
+
+.note-tile > small,
+.flash-tile small {
+  font-size: 12px;
+  color: var(--app-accent);
+  font-weight: 800;
+}
+
+.note-tile h3,
+.flash-tile h3 {
+  font-size: 15px;
+  letter-spacing: -0.4px;
+  margin: 6px 0;
+}
+
+.note-tile p {
+  font-size: 12px;
+  line-height: 1.6;
+  color: #829288;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  white-space: pre-line;
+}
+
+.note-tile:nth-child(3n + 2),
+.flash-tile:nth-child(3n + 2) {
+  background: var(--app-accent-soft);
+}
+
+.note-tile:nth-child(3n + 3),
+.flash-tile:nth-child(3n + 3) {
+  background: #fffcf4;
+}
+
+.page-wrap:has(.section-note) {
+  --section-accent: var(--app-accent);
+  --section-wash: var(--app-wash);
+  --section-line: var(--app-border);
+}
+
+.section-note .note-tile {
+  position: relative;
+  overflow: hidden;
+  padding-left: 27px;
+  border-left: 4px solid var(--app-accent);
+  background: var(--color-surface);
+}
+
+.section-note .note-tile:nth-child(3n + 2),
+.section-note .note-tile:nth-child(3n) {
+  border-left-color: var(--app-accent);
+  background: var(--app-accent-soft);
+}
+
+.section-note .note-tile p {
+  color: #65766d;
+}
+
+.section-note .search-box {
+  border-color: var(--app-border);
+  background: var(--color-surface-cool);
+}

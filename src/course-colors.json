@@ -1,0 +1,10 @@
+[
+  { "key": "terracotta", "label": "Терракота", "hex": "#B96B58" },
+  { "key": "ochre", "label": "Охра", "hex": "#A87C32" },
+  { "key": "blue", "label": "Синий", "hex": "#567DA6" },
+  { "key": "lilac", "label": "Сиреневый", "hex": "#8069A4" },
+  { "key": "turquoise", "label": "Бирюза", "hex": "#3F8E85" },
+  { "key": "pink", "label": "Розовый", "hex": "#AF687D" },
+  { "key": "olive", "label": "Оливковый", "hex": "#6F8042" },
+  { "key": "graphite", "label": "Графит", "hex": "#65727A" }
+]

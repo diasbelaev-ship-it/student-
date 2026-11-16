@@ -1,0 +1,127 @@
+.app-shell {
+  --color-emerald-900: var(--app-accent, #126848);
+  --color-green-wash: var(--app-wash, #edf6ef);
+  --color-border: var(--app-border, #dce7dc);
+  --app-shadow-accent: color-mix(in srgb, var(--app-accent, #126848) 12%, transparent);
+  --shadow-soft: 0 6px 18px color-mix(in srgb, var(--app-accent, #126848) 5%, transparent);
+  --section-accent: var(--app-accent, #126848);
+  --section-wash: var(--app-wash, #edf6ef);
+  --section-line: var(--app-border, #dce7dc);
+  color: #1d3028;
+  background: var(--app-canvas, #f2f6f2);
+}
+
+.app-shell .main-area {
+  background: var(--app-canvas, #f2f6f2);
+}
+
+.app-shell .sidebar,
+.app-shell .topbar {
+  background: #fff;
+  border-color: var(--app-border, #dce7dc);
+}
+
+.app-shell .logo {
+  color: var(--app-accent, #126848);
+}
+
+.app-shell .sidebar-top,
+.app-shell .nav-group + .nav-group,
+.app-shell .sidebar-user {
+  border-color: var(--app-border, #dce7dc);
+}
+
+.app-shell .page-wrap {
+  --section-accent: var(--app-accent, #126848);
+  --section-wash: var(--app-wash, #edf6ef);
+  --section-line: var(--app-border, #dce7dc);
+}
+
+.app-shell .section-stage {
+  --section-accent: var(--app-accent, #126848);
+  --section-wash: var(--app-wash, #edf6ef);
+  --section-line: var(--app-border, #dce7dc);
+}
+
+.app-shell .page-heading.surface-primary {
+  background: var(--app-accent, #126848);
+  border-color: var(--app-accent, #126848);
+}
+
+.app-shell .page-heading.surface-primary .eyebrow {
+  color: #e0f1e6;
+}
+
+.app-shell .page-heading.surface-primary p {
+  color: #f0f7f2;
+}
+
+.app-shell .page-heading.surface-primary > .button.primary {
+  color: var(--app-accent, #126848);
+}
+
+.app-shell .page-heading.surface-primary > .button.primary:hover {
+  background: var(--app-accent-soft, #e4f2e9);
+}
+
+.app-shell .button.primary,
+.app-shell .section-assistant .chat-bubble.user {
+  background: var(--app-accent, #126848);
+}
+
+.app-shell .button.primary:hover {
+  background: var(--app-accent-hover, #0d583d);
+}
+
+.app-shell .button.tertiary,
+.app-shell .nav-link.active,
+.app-shell .mobile-bottom-nav button.active {
+  color: var(--app-accent, #126848);
+  background: var(--app-accent-soft, #e4f2e9);
+}
+
+.app-shell .nav-link:hover,
+.app-shell .icon-button:hover {
+  color: var(--app-accent, #126848);
+  background: var(--app-accent-soft, #e4f2e9);
+}
+
+.app-shell .nav-link.active {
+  box-shadow: inset 3px 0 var(--app-accent, #126848);
+}
+
+.app-shell .page-heading .eyebrow,
+.app-shell .assistant-starters > span,
+.app-shell .section-stage .text-link,
+.app-shell .section-stage .button-link {
+  color: var(--app-accent, #126848);
+}
+
+.app-shell .home-hero {
+  background: var(--app-accent, #126848);
+}
+
+.app-shell .assistant-symbol,
+.app-shell .section-assistant .assistant-symbol,
+.app-shell .chat-composer:focus-within {
+  color: var(--app-accent, #126848);
+}
+
+.app-shell input:focus,
+.app-shell textarea:focus,
+.app-shell select:focus {
+  border-color: var(--app-accent, #126848) !important;
+  box-shadow: 0 0 0 3px var(--app-accent-soft, #e4f2e9);
+}
+
+.app-shell .section-stage :is(.panel, .list-panel, .day-column, .course-tile, .journal-subject) {
+  border-color: var(--app-border, #dce7dc);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app-shell .profile-theme-option,
+  .app-shell .assistant-attachment-button,
+  .app-shell .assistant-image-remove {
+    transition: none;
+  }
+}

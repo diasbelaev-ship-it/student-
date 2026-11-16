@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+data/
+backups/
+assets-src/
+*.log
+.taste-skill/

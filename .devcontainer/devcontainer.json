@@ -1,0 +1,21 @@
+{
+  "name": "Studia",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-24-bookworm",
+  "forwardPorts": [3001],
+  "portsAttributes": {
+    "3001": {
+      "label": "Studia",
+      "onAutoForward": "notify"
+    }
+  },
+  "containerEnv": {
+    "HOST": "0.0.0.0",
+    "PORT": "3001",
+    "NODE_ENV": "production",
+    "TRUST_PROXY": "1",
+    "BACKUP_ENABLED": "true",
+    "BACKUP_KEEP": "7"
+  },
+  "postCreateCommand": "npm ci && npm run build",
+  "postStartCommand": "npm run codespace:start"
+}

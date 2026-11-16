@@ -1,0 +1,22 @@
+.section-goal .list-panel {
+  border-top: 3px solid var(--app-accent);
+  background: #fbfcf5;
+}
+
+.section-goal .list-item {
+  background: #fbfcf5;
+}
+
+.section-goal .list-icon {
+  background: var(--app-accent-soft);
+  color: var(--app-accent);
+}
+
+.section-goal .progress {
+  height: 7px;
+  background: var(--app-accent-soft);
+}
+
+.section-goal .progress i {
+  background: #7d9d5c;
+}

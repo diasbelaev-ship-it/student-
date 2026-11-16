@@ -1,0 +1,436 @@
+:root {
+  font-family: 'DM Sans', Manrope, Arial, sans-serif;
+  color: #1d3028;
+  background: #f7f9f7;
+  font-synthesis: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+button:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+input,
+textarea,
+select {
+  outline: none;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  border-color: var(--app-accent) !important;
+  box-shadow: 0 0 0 3px var(--app-accent-soft);
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.subtle {
+  color: #83918a;
+}
+
+.kicker,
+.eyebrow {
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 1.6px;
+  color: var(--app-accent);
+}
+
+.kicker.light {
+  color: var(--app-accent);
+}
+
+.loading {
+  height: 100vh;
+  display: grid;
+  place-content: center;
+  gap: 15px;
+  text-align: center;
+  color: #819087;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: var(--space-9px);
+  color: var(--app-accent);
+  font-family: Manrope, sans-serif;
+  font-size: 22px;
+  letter-spacing: -1.3px;
+  font-weight: 800;
+}
+
+.logo-mark {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  background: var(--app-accent-soft);
+  border-radius: var(--radius-9px);
+  color: var(--app-accent);
+}
+
+.logo-dot {
+  color: var(--app-accent);
+}
+
+.auth-page {
+  min-height: 100vh;
+  display: grid;
+  grid-template-columns: minmax(400px, 1.05fr) minmax(390px, 0.95fr);
+  background: var(--color-white);
+}
+
+.auth-copy {
+  padding: 45px clamp(42px, 6vw, 95px);
+  background: var(--app-accent);
+  color: var(--color-white);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.auth-copy:before {
+  content: '';
+  position: absolute;
+  width: 590px;
+  height: 590px;
+  border: 1px solid #ffffff21;
+  border-radius: 50%;
+  top: 2%;
+  left: 50%;
+  box-shadow:
+    0 0 0 90px #ffffff09,
+    0 0 0 180px #ffffff06;
+}
+
+.auth-copy .logo {
+  color: var(--color-white);
+  z-index: 1;
+}
+
+.auth-copy .logo-mark {
+  background: #ffffff22;
+  color: #c6f0d2;
+}
+
+.auth-message {
+  position: relative;
+  z-index: 1;
+  margin: auto 0;
+  max-width: 530px;
+}
+
+.auth-message h1 {
+  font-family: Manrope, sans-serif;
+  font-size: clamp(44px, 5vw, 70px);
+  letter-spacing: -4px;
+  line-height: 1.11;
+  margin: 15px 0 23px;
+}
+
+.auth-message em {
+  font-style: normal;
+  color: #a9e7be;
+}
+
+.auth-message p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #c6e1d2;
+  max-width: 410px;
+}
+
+.auth-decoration {
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+
+.auth-decoration > span {
+  font-size: 12px;
+  color: #addbc0;
+  letter-spacing: 2px;
+}
+
+.auth-form-wrap {
+  display: grid;
+  place-items: center;
+  padding: 35px;
+}
+
+.auth-form {
+  width: min(390px, 100%);
+}
+
+.auth-mobile-logo {
+  display: none;
+}
+
+.auth-form h2 {
+  font:
+    800 32px Manrope,
+    sans-serif;
+  letter-spacing: -1.6px;
+  margin: 10px 0 8px;
+}
+
+.auth-form .subtle {
+  font-size: 13px;
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+.auth-tabs {
+  display: flex;
+  border-bottom: 1px solid #e6ece8;
+  margin-bottom: 23px;
+  gap: 25px;
+}
+
+.auth-tabs button {
+  background: none;
+  border: 0;
+  padding: 0 0 13px;
+  font-size: 13px;
+  font-weight: 800;
+  color: #87958c;
+}
+
+.auth-tabs button.active {
+  color: var(--app-accent);
+  border-bottom: 2px solid var(--app-accent);
+}
+
+.auth-form form {
+  display: grid;
+  gap: 17px;
+}
+
+.auth-form input::placeholder {
+  color: #a7b3ab;
+}
+
+.auth-form .button {
+  margin-top: var(--space-6px);
+}
+
+.auth-foot {
+  font-size: 12px;
+  color: #a2aca5;
+  margin-top: 25px;
+}
+
+.eyebrow {
+  color: var(--app-accent);
+}
+
+/*Student workspace refresh*/
+
+/*Human-readable AI action review*/
+
+/*Flashcard library*/
+
+/*Journal and GPA calculator*/
+
+/*Useful dashboard widgets*/
+
+/*Dashboard: calm, data-led widgets with a clearer visual hierarchy.*/
+
+/*GPA derived live from the journal; manual records remain a separate ledger.*/
+
+/*Quiet academic texture and framed surfaces*/
+
+.auth-form-wrap {
+  background-image:
+    radial-gradient(circle at 88% 18%, var(--app-accent-soft) 0, transparent 30%),
+    linear-gradient(color-mix(in srgb, var(--app-wash) 48%, transparent) 1px, transparent 1px),
+    linear-gradient(
+      90deg,
+      color-mix(in srgb, var(--app-wash) 48%, transparent) 1px,
+      transparent 1px
+    );
+  background-size:
+    auto,
+    40px 40px,
+    40px 40px;
+}
+
+.auth-form {
+  padding: 30px;
+  background: var(--color-warm-surface);
+  border: 1px solid var(--app-border);
+  border-radius: 18px;
+  box-shadow: 0 18px 45px color-mix(in srgb, var(--app-shadow-accent) 9%, transparent);
+}
+
+/*One Studia identity, with a different working texture for every study area.*/
+
+@keyframes section-arrive {
+  from {
+    opacity: 0;
+    transform: translateY(7px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes nav-arrive {
+  from {
+    transform: scale(0.9);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/*Schedule: an easy-to-scan week with a green time rail.*/
+
+/*Subjects: course tiles read like labeled folders.*/
+
+/*Deadlines: separate the work stages by one quiet green tone.*/
+
+/*Notes: an editorial notebook page with a clear margin.*/
+
+/*Assistant: a focused conversation and an explicit action preview.*/
+
+/*Gradebook and GPA: use green only for academic results and selected data.*/
+
+/*Materials: a catalog; reminders: a simple vertical timeline.*/
+
+/*Focus timer: one centred instrument. Cards: a tactile study deck.*/
+
+@keyframes card-reveal {
+  from {
+    opacity: 0.45;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/*Progress tools have their own object treatment while sharing the product palette.*/
+
+/*Studia's desk: real academic data in a tactile, readable workspace.*/
+
+/*A material shelf: selection is a working filter, not a decorative card.*/
+
+/*Timetable as seven legible day sheets without desktop horizontal scrolling.*/
+
+/*Dashboard hierarchy: one clear daily flow, with secondary detail folded away.*/
+
+/*Shared subject identity. Stored hex values are accents; text stays on AA-safe tints.*/
+
+:root {
+  --course-color-terracotta: #b96b58;
+  --course-color-ochre: #a87c32;
+  --course-color-blue: #567da6;
+  --course-color-lilac: #8069a4;
+  --course-color-turquoise: #3f8e85;
+  --course-color-pink: #af687d;
+  --course-color-olive: #6f8042;
+  --course-color-graphite: #65727a;
+}
+
+/*Final readability pass after all section and redesign styles.*/
+
+body {
+  font-size: 14px;
+}
+
+.kicker,
+.eyebrow,
+.sidebar-label,
+.topbar > span {
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  color: var(--app-accent);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  letter-spacing: -0.03em !important;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--color-muted) !important;
+  opacity: 1;
+}
+
+:root {
+  --group-muted: var(--color-muted);
+}
+
+/*Shared surface hierarchy*/
+
+:root {
+  --surface-regular: var(--color-surface);
+  --surface-border: var(--color-border);
+  --surface-accent: #155d42;
+}
+
+@media (max-width: 760px) {
+  .auth-page {
+    grid-template-columns: 1fr;
+  }
+  .auth-copy {
+    display: none;
+  }
+  .auth-form-wrap {
+    min-height: 100vh;
+  }
+  .auth-mobile-logo {
+    display: block;
+    margin-bottom: 75px;
+  }
+  .auth-form {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 500px) {
+  .auth-form-wrap {
+    padding: 20px;
+  }
+  .auth-form {
+    padding: 22px 18px;
+  }
+}

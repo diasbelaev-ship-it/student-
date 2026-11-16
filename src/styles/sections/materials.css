@@ -1,0 +1,27 @@
+.page-wrap:has(.section-material) {
+  --section-accent: var(--app-accent);
+  --section-wash: var(--app-wash);
+  --section-line: var(--app-border);
+}
+
+.section-material .list-panel {
+  border-top: 4px solid var(--app-accent);
+  background: var(--color-surface);
+}
+
+.section-material .list-item {
+  background: var(--color-surface);
+}
+
+.section-material .list-item:nth-child(2n) {
+  background: var(--app-accent-soft);
+}
+
+.section-material .list-icon {
+  background: var(--app-accent-soft);
+  color: var(--app-accent);
+}
+
+.section-material .list-item b {
+  font-family: Manrope, sans-serif;
+}

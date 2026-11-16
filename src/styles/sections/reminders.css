@@ -1,0 +1,76 @@
+.reminder-alert {
+  position: fixed;
+  z-index: 55;
+  right: 22px;
+  bottom: 76px;
+  display: flex;
+  align-items: center;
+  gap: var(--space-12px);
+  max-width: min(420px, calc(100vw - 30px));
+  padding: 14px 16px;
+  border: 1px solid var(--app-border);
+  border-radius: var(--radius-10px);
+  background: var(--app-accent-soft);
+  box-shadow: 0 12px 30px color-mix(in srgb, var(--app-shadow-accent) 20%, transparent);
+  color: var(--app-accent);
+}
+
+.reminder-alert > div {
+  display: grid;
+  gap: 3px;
+}
+
+.reminder-alert strong {
+  font-size: 13px;
+}
+
+.reminder-alert span {
+  font-size: 12px;
+}
+
+.reminder-alert button {
+  margin-left: auto;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.page-wrap:has(.section-reminder) {
+  --section-accent: var(--app-accent);
+  --section-wash: var(--app-wash);
+  --section-line: var(--app-border);
+}
+
+.section-reminder .list-panel {
+  position: relative;
+  background: var(--color-surface);
+}
+
+.section-reminder .list-panel:has(.list-item):before {
+  content: '';
+  position: absolute;
+  left: 36px;
+  top: 27px;
+  bottom: 27px;
+  width: 2px;
+  background: var(--app-accent-soft);
+}
+
+.section-reminder .list-item {
+  position: relative;
+  background: var(--color-surface);
+}
+
+.section-reminder .list-icon {
+  background: var(--app-accent-soft);
+  color: var(--app-accent);
+  border: 2px solid var(--app-border);
+}
+
+.section-reminder .toolbar-note {
+  background: var(--app-accent-soft);
+  border: 1px solid var(--app-border);
+  border-radius: var(--radius-10px);
+  padding: 10px 13px;
+}

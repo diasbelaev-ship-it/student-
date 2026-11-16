@@ -1,0 +1,24 @@
+.page-wrap:has(.section-expense) {
+  --section-accent: var(--app-accent);
+  --section-wash: var(--app-wash);
+  --section-line: var(--app-border);
+}
+
+.section-expense .list-panel {
+  border-top: 3px solid var(--app-accent);
+  background: var(--app-accent-soft);
+}
+
+.section-expense .list-item:nth-child(2n) {
+  background: var(--app-accent-soft);
+}
+
+.section-expense .list-icon {
+  background: var(--app-accent-soft);
+  color: var(--app-accent);
+}
+
+.section-expense .collection-summary {
+  background: var(--app-accent-soft);
+  border-left: 3px solid var(--app-accent);
+}

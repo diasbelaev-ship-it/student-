@@ -1,0 +1,13 @@
+.section-habit .list-panel {
+  background: var(--app-accent-soft);
+  border-top: 3px solid var(--app-accent);
+}
+
+.section-habit .list-item {
+  background: var(--app-accent-soft);
+}
+
+.section-habit .list-icon {
+  background: var(--app-accent-soft);
+  color: var(--app-accent);
+}
