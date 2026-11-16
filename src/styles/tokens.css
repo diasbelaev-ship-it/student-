@@ -3,6 +3,10 @@
   --app-accent: #126848;
   --app-accent-hover: #0d583d;
   --app-accent-soft: #e4f2e9;
+  --app-canvas: #f2f6f2;
+  --app-wash: #edf6ef;
+  --app-border: #dce7dc;
+  --app-shadow-accent: color-mix(in srgb, var(--app-accent) 12%, transparent);
   --color-emerald-900: #124735;
   --color-canvas: #fcfdf9;
   --color-white: #fff;
