@@ -5,6 +5,12 @@ dist/
 !.env.example
 data/
 backups/
+output/
+lab_work/
 assets-src/
+CHAT_HISTORY.md
+*.zip
 *.log
 .taste-skill/
+__pycache__/
+*.py[cod]
