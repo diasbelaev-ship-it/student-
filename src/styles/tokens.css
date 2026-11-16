@@ -1,4 +1,8 @@
 :root {
+  /* Global defaults keep auth and other screens outside .app-shell themed too. */
+  --app-accent: #126848;
+  --app-accent-hover: #0d583d;
+  --app-accent-soft: #e4f2e9;
   --color-emerald-900: #124735;
   --color-canvas: #fcfdf9;
   --color-white: #fff;
